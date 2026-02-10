@@ -1,0 +1,128 @@
+@import 'colors/frappe.css';
+
+* {
+    border: none;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+    
+    border-radius: 15px;
+    
+}
+
+#waybar > box {
+    padding: 4px 10px;
+}
+
+
+
+#workspaces {
+    background-color: @crust;
+    border-radius: 15px;
+    border: 2px solid @mantle;
+
+    padding: 2px 8px;
+
+    font-size: 13px;
+    margin: 3px 2px;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @surface2;
+    
+
+    border-radius: 15px; 
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    padding: 0px 6px;
+}
+
+#workspaces button.active {
+    color: @crust;         
+    background-color: @sky; 
+    
+    
+    padding: 0px 15px; 
+
+    min-width: 40px; 
+}
+
+#workspaces button.occupied {
+    color: @text;
+}
+
+#clock,
+#system,
+#other,
+#custom-arch,
+#active,
+#mpris {
+    background-color: @crust;
+    border-radius: 15px;
+    border: 2px solid @mantle;
+
+
+    font-size: 13px;
+    padding: 0px 6px;
+    margin: 4px 2px;
+}
+
+#mpris {
+    color: @sky;
+
+}
+
+#active {
+    color: @sky;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#window {
+    min-width: 60px;
+
+    transition: background-color 0.3s ease;
+}
+#custom-arch {
+    color: @sky;
+}
+
+#active custom-seperator {
+    color: @text;
+    
+}
+
+
+
+#system {
+    color: @red;
+}
+
+#system #cpu,
+#system #memory {
+    background-color: transparent;
+    border: none;
+}
+
+#network {}
+
+#clock {
+    color: @maroon;
+}
+
+
+#other {
+    color: @text;
+}
+
+#other #pulseaudio {
+    margin: 5px;
+}

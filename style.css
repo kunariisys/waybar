@@ -1,0 +1,90 @@
+@import '../../.cache/wal/colors-waybar.css';
+
+* {
+    border: none;
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+
+
+    border-radius: 29px;
+    color: @main;
+}
+
+window#waybar {
+    border-radius: 8px;
+    background-color: transparent;
+    color: @text;
+    padding: 2px 5px;
+}
+
+/*background */
+
+#mpris,
+#window,
+#system,
+#media,
+#clock,
+#workspaces {
+    background-color: alpha(@color9, 0.8);
+    border-radius: 20px;
+    margin: 10px 5px;
+    padding: 2px 10px;
+}
+
+/*text colors*/
+
+#mpris,
+#system label,
+#clock,
+#window label{
+    color: @color7;
+}
+
+
+
+#workspaces button {
+    background-color: @foreground;
+    opacity: 0.3;
+    border-radius: 100%;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+
+    min-width: 18px;
+    min-height: 18px;
+
+    padding: 0;
+
+    margin: 4px 2px;
+}
+
+#workspaces button.active {
+    background-color: @color7;
+
+    min-width: 45px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    margin: 4px 5px;
+}
+
+#workspaces button:hover {
+    background-color: @surface0;
+}
+
+#workspaces button.special {
+  background-color: @color8;
+}
+
+#workspaces button.special.active {
+  min-width: 30px;
+}
+
+
+#custom-separator {
+    color: @cursor;
+}
+
+
+#custom-arch {
+    padding-left: 15px;
+    color: @cursor;
+}
