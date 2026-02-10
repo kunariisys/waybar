@@ -1,0 +1,1 @@
+cool waybar config idk
