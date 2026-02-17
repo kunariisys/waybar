@@ -13,6 +13,7 @@
         "tray"
     ],
     "modules-right": [
+        "tray",
         "clock",
         "battery",
         "mpris"
@@ -149,5 +150,13 @@
             "cpu",
             "memory"
         ]
-    }
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10,
+        "icons": {
+            "blueman": "bluetooth",
+            "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+     }
+  }
 }
